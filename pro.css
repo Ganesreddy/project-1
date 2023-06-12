@@ -1,0 +1,381 @@
+*{
+   padding: 0;
+   margin: 0;
+   font-family: sans-serif;
+}
+.mobile-logo{
+  display: none;
+}
+.title{
+  color: #69666c;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px;
+    align-items: center;
+}
+.logo p{
+  display: inline;
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+ nav li{
+   padding-right: 16px;
+ }
+
+ nav a{
+    text-decoration: none;
+    color: rgb(24, 21, 21);
+ }
+ .cont{
+   background-color: lightgray;
+   display: flex;
+   justify-content: center;
+   padding: 32px 24px;
+ }
+ .cont img{
+   width: 100%;
+ }
+ .cont-right{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 24px;
+ }
+  
+ .cont-right button{
+    width: 100%;
+    padding: 8px 0px;
+    background-color:#3c3b3d;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #3c3b3d;
+ }
+
+ .cont-right  h1, h4{
+  text-align: left;
+  justify-content: center;
+  margin: 0 1%;
+  padding: 1% 2%;
+ }
+.art {
+  display: flex; 
+}
+.art p{
+  opacity: 0.6;
+}
+.left-art{
+  padding: 32px 24px;
+}
+  
+.left-art img , p{
+  width:100%;
+  padding-bottom: 32px;
+  font-size: small; 
+}
+.right-art{
+  padding: 32px 0px;
+}
+.oren-mobile , .campus-mobile , .guest-mobile{
+  display: none;
+}
+.oren-img , .camp-img , .guest-img{
+  display: flex;
+  border: 1px solid lightgray;
+  height: auto;
+}
+.orientation-m-info{
+  display: none;
+}
+.oren-img img , .camp-img img , .guest-img  img{
+  width: 35%;
+  height: auto;
+  padding: 12px 12px;
+}
+.guest-img{
+  background-color: lightgray;
+}
+.orientation-info{
+ padding: 30px 16px;
+}
+.orientation-info p{
+padding: 8px 8px;
+}
+.right-art button{
+  background: none;
+  border: 0;
+}
+.right-art a{
+  color: rgb(0, 157, 255);
+}
+.right-art h1{
+   text-align: center;
+   padding: 32px 0px;
+ }
+ .min-container{
+  background-color: lightgrey;
+  padding: 0px 72px 32px 72px;
+ }
+
+ .min-container h1{
+  padding: 32px 0px;
+  text-align: center;
+ }
+
+ .min-grid-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-gap: 32px;
+ }
+ .min-grid-wrapper img{
+  width: 100%;
+ }
+.min-1 , .min-2 , .min-3 , .min-4 , .min-5 , .min-6 {
+  background-color: white;
+}
+ .min-info{
+  padding:16px  ;
+ }
+ .min-info p{
+  padding: 8px 8px;
+  opacity: 0.5;
+  font-size: small;
+ }
+ .mobile-course{
+  display: none;
+ }
+ .exhibit{
+  padding: 32px 0px 32px 24px;
+  display: flex;
+ }
+.head{
+  text-align: center;
+  padding-top: 32px;
+}
+ .exhibit p{
+  opacity: 0.6;
+  font-size: small;
+ }
+ .h2{
+  text-align: center;
+ }
+ .exhibit-left{
+  padding: 24px;
+ }
+ .exhibit-left h2{
+  padding-bottom: 8px;
+  padding-left: 8px;
+ }
+ .exhibit-left video , p{
+  padding: 0px 0px 0px 8px;
+  width: 100%;
+ }
+ .exhibit-left video{
+  padding-right: 0px;
+ }
+ .exhibit-right{
+  width: 100%;
+  padding-top: 24px;
+ }
+ .h4{
+  padding: 42px 24px;
+  width: 65%;
+ }
+.fishma{
+  display: flex;
+  background-color: lightgray;
+}
+.NaT{
+  display: flex;
+}
+.mag img{
+  width: 100%;
+}
+.fishma img , .NaT img {
+  width: 35%;
+  height: auto;
+  padding: 24px 12px;
+}
+ footer{
+  padding: 16px 24px 0px 24px;
+ }
+ footer{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  font-size: x-small;
+  border: 1px solid lightgray;
+ }
+ul{
+  display: flex;
+  display: center;
+  list-style: none;
+  
+ }
+ a{
+  text-decoration: none;
+  color: darkgrey;
+  padding: 8px;
+ }
+ 
+
+
+ @media only screen and ( max-width:580px){
+  
+  *{
+    margin: 0%;
+    padding: 0%;
+  }
+  .navbar{
+      display: none;
+  }
+  .mobile-logo{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      align-items: center;
+      grid-gap: 10%;
+      padding: 32px 0px 32px 24px;
+  }
+  .mobile-banner img{
+      width: 100%;
+  }
+  .cont{
+    padding: 0px 0px 16px 0px;
+    flex-direction: column;
+  }
+  .cont img{
+    width: 100%;
+  }
+  .cont-right button {
+    background-color: gray;
+    border: none;
+    font-size: 100%;
+    
+  } 
+  .cont-right{
+    padding-right: 16px;
+  }
+
+  .left-art , .oren-desktop , .campus-desktop , .guest-desktop{
+    display: none;
+  }
+  .orientation-info{
+    display: none;
+  }
+  .right-art *{
+    border: none;
+  }
+  .oren-mobile{
+    display: grid;
+    padding-bottom: 16px;
+  }
+  .right-art , .orientation-m-info{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+    padding: 16px;
+  }
+  .orientation-m-info{
+    padding-bottom: 32px;
+    
+  }
+  .orientation-m-info button{
+    text-align: left;
+    padding-top: 8px;
+    padding-left: 8px;
+  }
+  .campus-mobile{
+    display: grid;
+    padding-bottom: 16px;
+  }
+  .right-art , .orientation-m-info{
+    display: flex;
+    flex-direction: column;
+  }
+  .date{
+    padding-left: 15px;
+    padding-top: 8px;
+  }
+
+  .guest-mobile{
+    display: grid;
+    padding-bottom: 16px;
+  }
+  .right-art , .orientation-m-info{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+
+  .right-art img{
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+  }
+  .min-grid-wrapper{
+    display: none;
+  }
+
+  .mobile-course{
+    display: grid;
+    margin:0px 16px 0px 16px ;
+  }
+
+  .min-container{
+    display: grid;
+    background-color: white;
+  }
+  
+  .mob-soft{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    padding: 16px 0px 24px 16px ;
+    margin-bottom: 8px;
+  }
+  .mob-art{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    padding: 16px 0px 24px 16px ;
+    margin-bottom: 8px;
+  }
+  .mob-design{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    padding: 16px 0px 24px 16px ;
+    margin-bottom: 8px;
+  }
+  .mob-data{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    padding: 16px 0px 24px 16px ;
+    margin-bottom: 8px;
+  }
+  .mob-Business{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    padding: 16px 0px 24px 16px ;
+    margin-bottom: 8px;
+  }
+  .mob-Marketing{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    padding: 16px 0px 24px 16px ;
+  }
+  .video-{
+    width: 100%;
+  }
+  .exhibit{
+    padding: 0px 0px 0px 0px;
+  }
+  .content, .exhibit-right{
+    display: none;
+  }
+  footer ul{
+    display: none;
+  }
+  
+}
